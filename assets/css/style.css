@@ -1,0 +1,206 @@
+body{
+  background-color: #F4F7FC;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.45em;
+  color: #959595;
+}
+.pull-right{
+  float: right;
+}
+.border-right{
+  border-right: solid 1px #ccc;
+}
+.border-left{
+  border-left: solid 1px #ccc;
+}
+.bg-white{
+  background-color: #fff;
+}
+.navbar.navbar-expand-lg.navbar-light.sidebar{
+  padding-top: 20px;
+}
+.navbar .navbar-brand{
+  font-weight: 900;
+  font-style: italic;
+  color: #668ED2;
+  font-size: 24px;
+  padding: 17px 14px;
+  -webkit-transition: all 0.3s ease;
+}
+.navbar .navbar-brand:hover{
+  color: #3b609e;
+  -webkit-transition: all 0.3s ease;
+}
+.header .fixed-top{
+  font-size:20px;  
+  color: inherit;
+  -webkit-box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.04);
+}
+.navbar-light .navbar-nav .nav-link{
+  color:#959595;
+}
+.navbar-light .navbar-nav .logout .nav-link{
+  color:#FB7F7F;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease;
+}
+.navbar-light .navbar-nav .logout .nav-link:hover{
+  color:#dc5c5c;
+  -webkit-transition: all 0.3s ease;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding: 8px 20px;
+}
+.navbar-expand-lg .navbar-nav .nav-link .user-img{
+  margin-right: 12px;
+}
+.nav-left-sidebar{
+  position: fixed;
+  width: 320px;
+  height: 100%;
+  top: 70px;
+  overflow: auto;
+  background-color: #668ED2;
+  z-index: 1;
+}
+.nav-left-sidebar .navbar-nav .nav-link.active, .nav-left-sidebar .navbar-nav .nav-link:hover{
+  background-color: #4B77C2;
+  border-radius: 4px;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+}
+.nav-left-sidebar .navbar-nav {
+  width: 100%;
+}
+.nav-left-sidebar .navbar-nav .nav-link {
+  padding: 9px;
+  color: #BDD4FC;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  -webkit-transition: all 0.3s ease;
+}
+.nav-left-sidebar .navbar-nav .nav-link i{
+  margin-right: 8px;
+}
+.dashboard-wrapper {
+  position: relative;
+  left: 0;
+  margin-left: 320px;
+  margin-top: 70px;
+}
+.dashboard-content {
+  padding: 30px 30px 60px 30px;
+}
+.notification{
+  height: 9px;
+  width: 9px;
+  background-color: #FB7F7F;
+  position: absolute;
+  border-radius: 25px;
+  top: 20px;
+  right: 295px;
+}
+.ct-label {
+  font-size: 13px;
+  font-family: 'Open Sans';
+  line-height: 1;
+}
+.text-pink{
+  color: #F887B5;
+}
+.text-blue{
+  color: #39B6DE;
+}
+.text-orange{
+  color: #F8B887;
+}
+.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut{
+  stroke: #39B6DE;
+}
+.ct-series-b .ct-point, .ct-series-b .ct-line, .ct-series-b .ct-bar, .ct-series-b .ct-slice-donut{
+  stroke: #F8B887;
+}
+.ct-series-c .ct-point, .ct-series-c .ct-line, .ct-series-c .ct-bar, .ct-series-c .ct-slice-donut{
+  stroke: #F887B5;
+}
+.card.dashboard{
+  min-height: 510px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  border: none;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(189,212,252, 0.5);
+  box-shadow: 0px 2px 6px 0px rgba(189,212,252, 0.5);
+}
+.card.dashboard .card-header{
+  color: #668ED2;
+  background-color: #fff;
+  margin: 20px;
+  border-bottom: solid 1px #BDD4FC;
+  padding: 0 0 20px 0;
+}
+.chart-desc{
+  margin-top: 35px;
+}
+.sign-in{
+    top: 20%;
+    left: 50%;
+    /*transform: translateY(-50%) rotateY(0deg);*/
+    transform: translateX(-50%) rotateX(0deg);
+    position: absolute;
+}
+.sign-in .card-header{
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 800;
+  background-color: #E4EDFE;
+  color: #668ED2;
+  border:none; 
+  border-radius: 20px 20px 0 0;
+  padding: 20px;
+  text-align: center;
+}
+.sign-in .card{
+  /*width: 620px;*/
+  border-radius: 20px;
+  border: none;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(189,212,252, 0.5);
+  box-shadow: 0px 2px 6px 0px rgba(189,212,252, 0.5);
+}
+.sign-in .card-body{
+  padding: 35px 60px;
+}
+.form-group .form-control{
+  border-radius: 8px;
+  border-color: #ccc;
+  height: 42px;
+}
+.btn-blue{
+  background-color: #668ED2;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+.btn-blue:hover{
+  background-color: #3b609e;
+}
+h5.form-title{
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 35px;
+}
+h5.form-subtext{
+  font-size: 18px;
+  text-align: center;
+  margin-top: 35px;
+}
+a.link{
+  color: #668ED2;
+}
+p.form-subtext{
+  text-align: center;
+  font-size: 14px;
+}

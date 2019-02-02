@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+    <title>E-Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/charts/morris-bundle/morris.css">
+    <link rel="stylesheet" href="assets/charts/chartist-bundle/chartist.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <section class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+          <a class="navbar-brand" href="#">E-DASHBOARD</a>
+
+          <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+            <div class="ml-auto">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-icons mt-1" href="#"><i class="fa fa-bell"></i> <span class="indicator"></span><span class="notification"></span></a>
+                    </li>
+                    <li class="border-left nav-item">
+                        <a class="nav-link" href="#"><img src="assets/images/ericson.jpg" alt="" class="user-img rounded-circle">Ericson</a>
+                    </li>
+                    <li class="border-left nav-item logout">
+                        <a class="nav-link mt-1" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+          <!-- </div> -->
+        </nav>
+    </section>
+    <!-- ============================================================== -->
+    <!-- left sidebar -->
+    <!-- ============================================================== -->
+    <div class="nav-left-sidebar sidebar-dark">
+        <div class="menu-list">
+
+            <nav class="navbar navbar-expand-lg navbar-light sidebar">
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="#"><i class="fa fa-user-circle"></i>Dashboard</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#"><i class="fa fa-signal"></i>Report
+                                <span class="pull-right"><i class="fa fa-angle-down"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#"><i class="fa fa-book"></i>Invoice</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#"><i class="fa fa-envelope"></i>Email</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#"><i class="fa fa-list-ul"></i>Orders</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#"><i class="fa fa-users"></i>Customers
+                                <span class="pull-right"><i class="fa fa-angle-down"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+            </nav>
+
+        </div>
+    </div>
+    <div class="dashboard-wrapper">
+        <div class="container-fluid dashboard-content ">
+            <div class="ecommerce-widget">
+
+                <div class="row">
+                    <!-- ============================================================== -->
+                                            <!-- product category  -->
+                    <!-- ============================================================== -->
+                    <div class="col-xl-3 col-md-6 col-sm-12 col-12">
+                        <div class="card dashboard">
+                            <h5 class="card-header"> Product Category</h5>
+                            <div class="card-body">
+                                <div class="ct-chart-category ct-golden-section" style="height: 315px;"></div>
+                                <div class="text-center m-t-40 chart-desc">
+                                    <span class="legend-item mr-3">
+                                            <span class="fa-xs text-pink mr-1 legend-tile"><i class="fa fa-fw fa-square-full "></i></span><span class="legend-text">T-Shirt</span>
+                                    </span>
+                                    <span class="legend-item mr-3">
+                                        <span class="fa-xs text-blue mr-1 legend-tile"><i class="fa fa-fw fa-square-full"></i></span>
+                                    <span class="legend-text">Tanktop</span>
+                                    </span>
+                                    <span class="legend-item mr-3">
+                                        <span class="fa-xs text-orange mr-1 legend-tile"><i class="fa fa-fw fa-square-full"></i></span>
+                                    <span class="legend-text">Pants</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- end product category  -->
+                           <!-- product sales  -->
+                    <!-- ============================================================== -->
+                    <div class="col-xl-4 col-md-6 col-sm-12 col-12">
+                        <div class="card dashboard">
+                            <div class="card-header">
+                                <h5 class="mb-0"> Product Sales</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="ct-chart-product ct-golden-section" id="ct-chart-product"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5 col-md-12 col-sm-12 col-12">
+                        <div class="card dashboard">
+                            <h5 class="card-header"> Total Revenue</h5>
+                            <div class="card-body">
+                                <div id="morris_totalrevenue"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- morris js -->
+    <script src="assets/charts/morris-bundle/raphael.min.js"></script>
+    <script src="assets/charts/morris-bundle/morris.js"></script>
+    <!-- chart chartist js -->
+    <script src="assets/charts/chartist-bundle/chartist.min.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
